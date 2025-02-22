@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клешни Бар</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: url('./фон.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+        }
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-bottom: 5px solid #FFD700;
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .cafe-name {
+            margin-top: 15px;
+            font-size: 36px;
+            font-weight: bold;
+            color: #FFD700;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .gallery img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .menu-section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            margin: 40px auto;
+            border-radius: 10px;
+            max-width: 800px;
+            text-align: center;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .menu-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .menu-item h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #FFD700;
+        }
+        .menu-item p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .contact-info {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 40px auto;
+        }
+        .contact-info h2 {
+            margin-bottom: 10px;
+            font-size: 26px;
+            color: #FFD700;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .instagram img {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+        }
+        /* Медиа-запросы для адаптации на телефонах */
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cafe-name {
+        font-size: 24px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cafe-name {
+        font-size: 20px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="./круг_лого-removebg.png" alt="Клешни Бар Логотип" class="logo">
+        <div class="cafe-name">Клешні Бар</div>
+    </header>
+
+    <div class="gallery">
+        <img src="./дмванчик.jpg" alt="Вывеска">
+        <img src="./жареный.jpg" alt="Жареный рак">
+        <img src="./инт.jpg" alt="Интерьер">
+        <img src="./обычный рак.jpg" alt="Рак">
+    </div>
+
+    <div class="contact-info">
+        <h2>Зробити замовлення</h2>
+        <p>Телефон: +38 123 456 7890</p>
+        <p>Телефон: +38 987 654 3210</p>
+        <p>Адреса Раків Татаров: вулиця Незалежності, 112</p>
+        <p>Адреса Раків Буковель: вулиця Урочище Вишні, 639</p>
+        <div class="instagram">
+            <a href="https://www.instagram.com/kleshni.bar/" target="_blank">
+                <img src="./insta.webp" alt="Instagram">
+            </a>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Меню раків</h2>
+        <div class="menu-grid">
+            <div class="menu-item"><h3>Маленький рак</h3><p>2500 грн/кг</p></div>
+            <div class="menu-item"><h3>Средний рак</h3><p>3000 грн/кг</p></div>
+            <div class="menu-item"><h3>Великий рак</h3><p>3500 грн/кг</p></div>
+            <div class="menu-item"><h3>Гіганти раки</h3><p>4000 грн/кг</p></div>
+            <div class="menu-item"><h3>Варка</h3><p>+500 грн/кг</p></div>
+            <div class="menu-item"><h3>Смажені</h3><p>+500 грн/кг</p></div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Інше меню</h2>
+        <div class="menu-grid">
+            <div class="menu-item"><h3>Том ям з морепродуктами</h3><p>350 грн</p></div>
+            <div class="menu-item"><h3>Удон з морепродуктами</h3><p>325 грн</p></div>
+            <div class="menu-item"><h3>Соба з морепродуктами</h3><p>325 грн</p></div>
+            <div class="menu-item"><h3>Картопля фрі</h3><p>125 грн</p></div>
+            <div class="menu-item"><h3>Креветка фрі з соусом тар- тар</h3><p>230 грн</p></div>
+            <div class="menu-item"><h3>Креветка В/М 40-60</h3><p>1500 грн/кг</p></div>
+            <div class="menu-item"><h3>Креветка В/М 70-90</h3><p>1000 грн/кг</p></div>
+            <div class="menu-item"><h3>Риба сушена (Плотва)</h3><p>100 грн за 100 гр</p></div>
+            <div class="menu-item"><h3>Риба сушена ( Судак )</h3><p>225 грн за 100 гр</p></div>
+            <div class="menu-item"><h3>Пиво Микулинецьке «900»
+                В асортименті</h3><p>225 грн за 100 гр</p></div>
+            <div class="menu-item"><h3>Пиво Микулинецьке «Blanche» 
+                В асортименті</h3><p>225 грн за 100 гр</p></div>
+            <div class="menu-item"><h3>Пиво Микулинецьке «Українське темне»
+                В асортименті</h3><p>225 грн за 100 гр</p></div>
+            <div class="menu-item"><h3>Пиво Микулин Б/А 
+                В асортименті</h3><p>225 грн за 100 гр</p></div>
+            <div class="menu-item"><h3>Лимонад</h3><p>40 грн (0.5 л)</p></div>
+        </div>
+    </div>
+</body>
+</html>
